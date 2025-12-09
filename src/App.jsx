@@ -14,7 +14,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MyLayout />}>
+        <Route path="/Telecom-Academy-Profolio/" element={<MyLayout />}>
           <Route index element={<Home />} />
           <Route path="BmiCalculator" element={<BmiCalculator />} />
           <Route path="Calculator" element={<Calculator />} />
