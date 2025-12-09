@@ -24,8 +24,8 @@ button {
   box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
 }
 button:hover {
-  /* background-color: var(--bg-dark-high);
-  color: var(--bg-light-high); */
+  background-color: var(--bg-light-high) !important;
+  color: var(--bg-black-high) !important;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
   border: 1px solid black;
 }
@@ -292,35 +292,37 @@ button:hover {
   grid-template-columns: 7fr 3fr;
   /* background-color: #5c5c5c; */
 }
-.display_container {
+.main_container .display_container {
   grid-column: 1;
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-bottom: 50px;
 }
-.btn_container {
+.main_container .btn_container {
   grid-column: 1;
   width: 100%;
   height: fit-content;
 }
-.button_container {
+.main_container .button_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   /* gap: 5px; */
   /* margin: 5px; */
 }
-.btn_container > button {
+.main_container .btn_container > button {
+  /* background-color: ; */
   width: 100%;
   height: 100px;
   margin: 0;
 }
-.btn_container > button:hover {
+.main_container .btn_container > button:hover {
   background-color: white;
   color: black;
   border: 1px solid black;
 }
-.display_container > input {
+.main_container .display_container > input {
+  background-color: var(--bg-light-low);
   border: 0;
   margin: 0;
   padding: 0;
@@ -328,11 +330,11 @@ button:hover {
   height: 40px;
   font-size: large;
 }
-.second {
+.main_container .second {
   color: rgb(184, 184, 184);
   text-align: right;
 }
-.active-history {
+.main_container .active-history {
   width: max-content;
   padding-right: 25px;
   height: 342px;
@@ -343,21 +345,25 @@ button:hover {
   grid-template-rows: 2;
   overflow-y: scroll;
   /* overflow-x: hidden; */
-  background-color: #5c5c5c;
+  background-color: var(--bg-light-mid);
 }
-.active-history::-webkit-scrollbar {
+.main_container .active-history::-webkit-scrollbar {
   display: none;
 }
-.unactive-history {
+.main_container .unactive-history {
   display: none;
 }
-.history_box {
+.main_container .history_box {
   width: 100%;
   height: 50px;
   border: 1px solid white;
   margin: 8px;
   border-radius: 5px;
   text-wrap: wrap;
+  background-color: var(--bg-light-high);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Ends here*/
@@ -397,18 +403,20 @@ button:hover {
 /*Ends here*/
 /* /////////////////////////////////////////////// */
 /* TipCalculator.jsx CSS style start here */
-.container {
+.TipContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.container > h2 {
+.TipContainer > h2 {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
-input {
-  /* border-radius: 5px; */
+.TipContainer input {
+  background-color: var(--bg-light-high);
+  color: var(--bg-dark-high);
+  border-radius: 5px;
   border: 1px solid white;
   text-align: center;
   margin: 5px;
@@ -466,3 +474,11 @@ button {
 
 /*Ends here*/
 /* /////////////////////////////////////////////// */
+
+/* .hotelContainer {
+        Width:  500px ,
+        margin:  2rem auto ,
+        padding:  1rem ,
+        border:  1px solid #ddd ,
+        borderRadius:  8px ,
+} */

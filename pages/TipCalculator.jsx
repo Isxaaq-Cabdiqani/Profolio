@@ -21,7 +21,7 @@ function TipCalculator() {
   }
   return (
     <>
-      <div className="container">
+      <div className="TipContainer">
         <h2>Tip calculator</h2>
         <label>Billl amount: </label>
         <input

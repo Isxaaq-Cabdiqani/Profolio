@@ -5,9 +5,14 @@ import "./App.css";
 function MyLayout() {
   const [islogin, setIslogin] = useState(false);
   const [name, setName] = useState("");
+  const [pass, setPass] = useState("");
+  const [error, setError] = useState(false);
 
   function Login() {
-    setIslogin((p) => !p);
+    if (name == "ahmed0987" || pass == "1122") return setIslogin((p) => !p);
+    else {
+      setError(true);
+    }
   }
   return (
     <div id="TheLayout">
@@ -21,9 +26,15 @@ function MyLayout() {
               onChange={(e) => setName(e.target.value)}
             />
             <br />
-            <input type="password" placeholder="Enter your password" />
+            <input
+              type="password"
+              placeholder="Enter your password"
+              value={pass}
+              onChange={(e) => setPass(e.target.value)}
+            />
             <br />
             <button onClick={Login}>Login</button>
+            {error && <p style={{ color: "red" }}>invalid name or password</p>}
           </div>
         </div>
       )}
