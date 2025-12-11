@@ -1,4 +1,4 @@
-/* Normal App.jsx CSS Style start here*/
+/* General CSS Style start here*/
 #root {
   max-width: 100vw;
   margin: 0 auto;
@@ -29,41 +29,6 @@ button:hover {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
   border: 1px solid black;
 }
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
 /*Ends here*/
 /* /////////////////////////////////////////////// */
 /* TheLayout.jsx CSS style start here */
@@ -71,8 +36,7 @@ button:hover {
   width: 100%;
   height: 1000px;
   display: grid;
-  grid-template-columns: 3fr 7fr;
-  grid-template-rows: 1fr 8fr 1fr;
+  grid-template-columns: 4fr 6fr 4fr;
 }
 #TheLayout .loginPage {
   width: 100vw;
@@ -91,80 +55,6 @@ button:hover {
   box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.2);
   border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
-#TheLayout .loginCard > input {
-  width: 350px;
-  background-color: oklch(100% 0 0);
-  color: black;
-  border: 1px solid black;
-  border-radius: 6px;
-}
-#TheLayout .loginCard button {
-  background-color: oklch(100% 0 0);
-  color: oklch(0% 0 0);
-  border: 1px solid black;
-  margin-top: 5px;
-}
-#TheLayout .loginCard button:hover {
-  background-color: oklch(0% 0 0);
-  color: oklch(100% 0 0);
-  border: 1px solid white;
-  margin-top: 5px;
-}
-#TheLayout .nameHolder {
-  z-index: 2;
-  grid-row: 1;
-  grid-column: 1;
-  width: 307px;
-  background-color: var(--bg-light-mid);
-  border-right: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--bg-dark-high);
-  font-family: "Times New Roman", Times, serif;
-  font-size: xx-large;
-}
-#TheLayout header {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row: 1;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: x-large;
-  font-weight: 700;
-  background-color: var(--bg-light-mid);
-  border-bottom: 1px solid black;
-}
-#TheLayout .sideBar {
-  width: 20vw;
-  height: 100%;
-  background-color: var(--bg-light-mid);
-  color: var(--bg-dark-high);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  grid-column: 1;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  border-right: 1px solid black;
-  border-top: 1px solid white;
-}
-#TheLayout .sideBar > a {
-  text-decoration: none;
-  color: var(--bg-dark-high);
-  padding: 20px;
-  margin-top: 5px;
-}
-#TheLayout .sideBar > a:hover {
-  background-color: white;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
-}
 #TheLayout main {
   width: 79vw;
   height: 900px;
@@ -173,27 +63,39 @@ button:hover {
   align-items: center;
   justify-content: center;
   grid-column: 2;
-  grid-row: 2;
   background-color: var(--bg-light-mid);
   overflow: hidden;
   overflow-y: scroll;
 }
-#TheLayout main::-webkit-scrollbar {
-  display: none;
+.introCard {
+  background-color: var(--bg-light-high);
+  width: 400px;
+  text-align: left;
+  padding-left: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.614);
 }
-#TheLayout footer {
+.introCard:hover {
+  scale: 1.01;
+  background-color: var(--bg-light-high);
+  width: 400px;
+  text-align: left;
+  padding-left: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.9);
+}
+/* .techCard {
+  background-color: var(--bg-light-high);
+  width: 400px;
+  height: 400px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: x-large;
-  font-weight: 700;
-  background-color: var(--bg-light-mid);
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  grid-row: 3;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
+  align-content: space-between;
+  /* flex-direction: row; */
+/* } */
+/* tCrad {
+  width: 50px;
+  height: 50px;
+} */
 /* Ends here */
 /* //////////////////////////////////////////////////// */
 /* BmiCalculator.jsx CSS style start here */

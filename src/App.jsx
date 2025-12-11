@@ -7,7 +7,7 @@ import ImageSlider from "../pages/ImageSlider";
 import TipCalculator from "../pages/TipCalculator";
 import TodoApp from "../pages/todoApp";
 import MyLayout from "./TheLayout";
-import Home from "../pages/Home";
+// import Home from "../pages/Home";
 import HotelBooking from "../pages/HotelBooking";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <HashRouter>
       <Routes>
         <Route path="/" element={<MyLayout />}>
-          <Route index element={<Home />} />
+          {/* <Route index element={<Home />} /> */}
           <Route path="BmiCalculator" element={<BmiCalculator />} />
           <Route path="Calculator" element={<Calculator />} />
           <Route path="ImageSlider" element={<ImageSlider />} />

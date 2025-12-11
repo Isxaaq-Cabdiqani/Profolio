@@ -4,9 +4,6 @@ import "./App.css";
 
 function MyLayout() {
   const [islogin, setIslogin] = useState(false);
-  // const [name, setName] = useState("");
-  // const [pass, setPass] = useState("");
-  // const [error, setError] = useState(false);
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       Pressed();
@@ -44,23 +41,32 @@ function MyLayout() {
       )}
       {islogin && (
         <div id="LayoutDisplay">
-          <header>Projects</header> <div className="nameHolder">{name}</div>
-          <div className="sideBar">
-            <Link to={"/BmiCalculator"}>Bmi Calculator</Link>
-            <Link to={"/Calculator"}>Calculator</Link>
-            <Link to={"/ImageSlider"}>Image Slider</Link>
-            <Link to={"/TipCalculator"}>Tip Calculator</Link>
-            <Link to={"/TodoApp"}>Todo App</Link>
-            <Link to={"/HotelBooking"}>Hotel Booking</Link>
-          </div>
           <main>
+            <div className="introCard">
+              <p style={{ fontWeight: "500", marginBottom: "1px" }}>
+                I'm Isxaaq, a full stack developer
+              </p>
+              <hr />
+              <p style={{ color: "rgba(0, 0, 0, 0.7)", margin: "1px" }}>
+                I started my first line of code in 2022.
+              </p>
+              <p style={{ color: "rgba(0, 0, 0, 0.7)", marginTop: "1px" }}>
+                Most of the time i work with frontend, right now i am learning
+                backend
+              </p>
+            </div>
+            {/* <div className="techCard">
+              <button className="tCard"></button>
+              <button className="tCard"></button>
+              <button className="tCard"></button>
+              <button className="tCard"></button>
+            </div> */}
             <Outlet />
           </main>
-          <footer>Projects</footer>
         </div>
       )}
     </div>
   );
 }
- 
+
 export default MyLayout;
