@@ -162,7 +162,17 @@ function MyLayout() {
                 </div>
               </div>
               <div className="left">
-                <div className="workStudyPanel"></div>
+                <div className="workStudyPanel">
+                  <div className="head">
+                    <div className="border">
+                      <h3>Work</h3>
+                    </div>
+                    <p>|</p>
+                    <div className="border">
+                      <h3>Studies</h3>
+                    </div>
+                  </div>
+                </div>
               </div>
               <Outlet />
             </div>

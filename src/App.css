@@ -57,7 +57,7 @@ button:hover {
 }
 #TheLayout main {
   width: 79vw;
-  height: 900px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,6 +75,14 @@ button:hover {
 }
 .right {
   grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left {
+  margin-top: 25px;
+  grid-column: 1;
+  grid-row: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,9 +143,27 @@ svg:hover {
   scale: 1.3;
 }
 .workStudyPanel {
-  grid-column: 1;
   background-color: var(--bg-light-high);
   width: 500px;
+  height: 600px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.614);
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+}
+.head {
+  grid-row: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.border {
+  width: 249px;
+  border-bottom: 1px solid black;
+}
+.border:hover {
+  border-bottom: 5px solid rgba(0, 0, 0, 0.7);
+  scale: 1.01;
 }
 /* Ends here */
 /* //////////////////////////////////////////////////// */
