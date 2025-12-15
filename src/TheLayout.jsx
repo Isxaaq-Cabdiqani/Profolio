@@ -165,11 +165,12 @@ function MyLayout() {
                 <div className="workStudyPanel">
                   <div className="head">
                     <div className="border">
-                      <h3>Work</h3>
+                      <h2>Work</h2>
                     </div>
-                    <p>|</p>
+
+                    <hr style={{ width: "1px", backgroundColor: "black" }} />
                     <div className="border">
-                      <h3>Studies</h3>
+                      <h2>Studies</h2>
                     </div>
                   </div>
                 </div>
