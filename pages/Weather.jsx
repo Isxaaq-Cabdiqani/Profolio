@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function UserLocation() {
+function WeatherApp() {
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
   const [error, setError] = useState(null);
@@ -119,4 +119,4 @@ function UserLocation() {
   );
 }
 
-export default UserLocation;
+export default WeatherApp;

@@ -9,6 +9,7 @@ import TodoApp from "../pages/todoApp";
 import MyLayout from "./TheLayout";
 // import Home from "../pages/Home";
 import HotelBooking from "../pages/HotelBooking";
+import WeatherApp from "../pages/Weather";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="TipCalculator" element={<TipCalculator />} />
           <Route path="TodoApp" element={<TodoApp />} />
           <Route path="HotelBooking" element={<HotelBooking />} />
+          <Route path="WeatherApp" element={<WeatherApp />} />
         </Route>
       </Routes>
     </HashRouter>
