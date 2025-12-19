@@ -3,6 +3,19 @@ import { Outlet, Link } from "react-router-dom";
 import "./App.css";
 
 function MyLayout() {
+  const Pr = [
+    {
+      id: 1,
+      name: "Weather",
+      lin: "/WeatherApp",
+    },
+    {
+      id: 2,
+      name: "BMI Calculator",
+      lin: "/BmiCalculator",
+    },
+  ];
+  const [projects, setProjects] = useState([...Pr]);
   const [islogin, setIslogin] = useState(false);
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
@@ -175,6 +188,7 @@ function MyLayout() {
                   </div>
                 </div>
               </div>
+              <div className="Projocts">{}</div>
               <Outlet />
             </div>
           </main>
