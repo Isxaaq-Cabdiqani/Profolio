@@ -64,7 +64,7 @@ function MyLayout() {
                 <div className="exp">
                   <h2 style={{ paddingLeft: "10px" }}>Experience</h2>
                   <hr />
-                  <h1>1+</h1>
+                  <h1>1y +</h1>
                 </div>
                 <div className="techCard">
                   <div className="title">
@@ -188,7 +188,17 @@ function MyLayout() {
                   </div>
                 </div>
               </div>
-              <div className="Projocts">{}</div>
+              <br />
+              <div className="Projocts">
+                {projects.map((projects, id) => (
+                  <Link to={projects.lin}>
+                    <div key={id} className="mini-containers">
+                      {projects.name}
+                    </div>
+                  </Link>
+                ))}
+              </div>
+              <br />
               <Outlet />
             </div>
           </main>
