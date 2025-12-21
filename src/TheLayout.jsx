@@ -14,6 +14,11 @@ function MyLayout() {
       name: "BMI Calculator",
       lin: "/BmiCalculator",
     },
+    {
+      id: 3,
+      name: "Calculator",
+      lin: "/Calculator",
+    },
   ];
   const [projects, setProjects] = useState([...Pr]);
   const [islogin, setIslogin] = useState(false);
