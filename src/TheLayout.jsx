@@ -14,6 +14,7 @@ function MyLayout() {
       name: "BMI Calculator",
       lin: "/BmiCalculator",
     },
+    
     {
       id: 3,
       name: "Calculator",
