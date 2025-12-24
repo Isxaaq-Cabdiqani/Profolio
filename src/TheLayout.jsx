@@ -53,7 +53,7 @@ function MyLayout() {
               <br /> Most of the time I work on new projects to saty up to date
               while learning more, <br /> Right now I'm searching for full stack
               position <br /> Here is my profolio, where you can take a look at
-              my projects.
+              my recent projects.
             </p>
 
             <p style={{ textAlign: "left", color: "rgba(0, 0, 0, 0.45)" }}>
