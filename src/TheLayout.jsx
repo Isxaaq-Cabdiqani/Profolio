@@ -195,7 +195,7 @@ function MyLayout() {
                 </div>
               </div>
               <br />
-              <div className="Projocts">
+              <div className="Recent Projocts">
                 {projects.map((projects, id) => (
                   <Link to={projects.lin}>
                     <div key={id} className="mini-containers">
